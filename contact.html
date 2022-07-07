@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i1.wp.com/freefirename.in/wp-content/uploads/2021/08/How-to-Play-Free-Fire-On-PC.jpg?resize=840%2C549&ssl=1" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e0fe1f7172.js" crossorigin="anonymous"></script>
+    <title>Register Now</title>
+    <style>
+        #status {
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        
+        #status.success {
+            margin-top: 40px;
+            font-size: 15px;
+            background-color: rgb(211, 250, 153);
+            animation: status 4s ease forwards;
+        }
+        
+        #status.error {
+            background-color: rgb(250, 129, 92);
+            color: white;
+            animation: status 4s ease forwards;
+        }
+        
+        @keyframes status {
+            0% {
+                opacity: 1;
+                pointer-events: all;
+            }
+            90% {
+                opacity: 1;
+                pointer-events: all;
+            }
+            100% {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container">
+            <h1 class="logo lg-heading text-light">FF - Esports</h1>
+            <ul class="nav-items">
+                <!-- <li class="nav-item"><a href="./index.html">Home</a></li> -->
+                <li class="nav-item"><a href="./contact.html" target="_blank">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="contact-form">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="company-address">
+                    <img src="https://pic-bstarstatic.akamaized.net/ugc/470062a49813dbaed59065a7a0ec6238f385636b.jpg@720w_406h_1e_1c_1f.webp" alt="Company Image">
+                </div>
+                <form action="https://formspree.io/f/xayvazko" method="POST" id="my-form" class="form">
+                    <h1 class="lg-heading text-black">Register Now</h1>
+                    <p class="text-gray">Bind your Free Fire account Now to join tournament . And give us an email so we can send you all the information about the tournament?</p>
+                    <div class="form-group">
+                        <label for="username">Email address or phone number</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="Email address or phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Password</label>
+                        <input type="password" id="lastName" name="lastName" required placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email here and we will contact you
+                        ">
+                    </div>
+                    <button type="submit" class="form-btn">Submit</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
